@@ -9,7 +9,6 @@
     "build:prod": "vue-cli-service build",
     "build:stage": "vue-cli-service build --mode staging",
     "build:test": "vue-cli-service build --mode test",
-    "build:dev": "vue-cli-service build --mode development",
     "preview": "node build/index.js --preview",
     "new": "plop",
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
@@ -69,6 +68,7 @@
     "vue": "2.6.10",
     "vue-count-to": "1.0.13",
     "vue-router": "3.0.2",
+    "vue-sanitize": "^0.2.2",
     "vue-splitpane": "1.0.4",
     "vue-template-compiler": "2.6.10",
     "vuedraggable": "2.20.0",
@@ -80,6 +80,9 @@
     "> 1%",
     "last 2 versions"
   ],
+  "bugs": {
+    "url": "https://github.com/PanJiaChen/vue-element-admin/issues"
+  },
   "engines": {
     "node": ">=8.9",
     "npm": ">= 3.0.0"
@@ -99,6 +102,11 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
