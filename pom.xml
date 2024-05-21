@@ -154,6 +154,12 @@
             <version>1.12.344</version>
         </dependency>
 
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>kms</artifactId>
+            <version>2.19.25</version>
+        </dependency>
+
         <!-- 邮件服务依赖 -->
         <dependency>
             <groupId>com.sun.mail</groupId>
@@ -185,7 +191,23 @@
             <artifactId>secretsmanager</artifactId>
             <version>2.19.25</version>
         </dependency>
+        <!--第三方库pinyin4j 用来 将中文的省份和城市转换为拼音-->
+        <dependency>
+            <groupId>com.belerweb</groupId>
+            <artifactId>pinyin4j</artifactId>
+            <version>2.5.1</version>
+        </dependency>
 
+        <!-- CloudWatch -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>cloudwatch</artifactId>
+            <version>2.19.25</version>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-cloudwatch2</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
