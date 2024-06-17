@@ -21,7 +21,7 @@
   "dependencies": {
     "@tinymce/tinymce-vue": "4.0.3",
     "@vueuse/core": "^5.0.3",
-    "axios": "^0.21.1",
+    "axios": "^0.28.0",
     "classnames": "^2.3.1",
     "core-js": "^3.14.0",
     "element-plus": "^1.0.2-beta.55",
